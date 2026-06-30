@@ -287,3 +287,21 @@ a{color:inherit;}
   .flag-badge{width:48px;height:48px;font-size:28px;}
   .score-input{width:42px;height:42px;font-size:18px;}
 }
+
+/* Configuração do círculo que envolve a bandeira */
+.badge-circle {
+    width: 50px;          /* Ajuste para o tamanho que desejar o círculo */
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;     /* Recorta a imagem em formato de círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Configuração da imagem da bandeira dentro do círculo */
+.flag-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* Faz a bandeira preencher o círculo sem distorcer */
+}
